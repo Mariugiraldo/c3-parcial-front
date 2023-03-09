@@ -1,7 +1,7 @@
 import Card from "./Card";
 import React, { useState } from "react";
 
-const Form = () => {
+const App = () => {
   const [user, setUser] = useState({
     nombre: "",
     preferencia: "",
@@ -19,6 +19,7 @@ const Form = () => {
       setShow(false);
       setErr(true);
     }
+  };
     return (
       <div>
         <form onSubmit={handleSubmit}>
@@ -42,6 +43,5 @@ const Form = () => {
       </div>
     );
   };
-};
 
 export default App;
