@@ -12,7 +12,7 @@ const App = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (user.nombre.length >= 3 && user.preferencia.length > 6) {
+    if (user.nombre.length >= 3 && !user.nombre.startsWith(" ") && user.preferencia.length > 6) {
       setShow(true);
       setErr(false);
     } else {
